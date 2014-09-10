@@ -1,0 +1,177 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <style>
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0px;
+      background: #F5F0ED;
+    }
+    
+    .nav {
+      padding-left: 100px;
+      padding-right: 100px;
+      background-color: red;
+      color: white;
+      height: 50px;
+      font-family: helvetica;
+      border-bottom: 3px solid black;
+      
+    }
+    
+    .navBarOptions {
+      border-right: 3px solid black;
+      display: inline-block;
+      float: right;
+    }
+    
+    .navBarItem {
+      border-left: 3px solid black;
+      height: 100%;
+      display: inline-block;
+    }
+    
+    #notifications:hover #notificationsMenu {
+      display: block;
+/*      background-color: blue;*/
+      position: absolute;
+    }
+    
+    #notifications:hover {
+      background-color: blue;
+    }
+    
+    #notifications #notificationsMenu {
+      display: none;
+      width: 300px;
+/*      background-color: blue;*/
+      margin-top: 15px;
+      margin-left: -63px;
+    }
+    
+    #notificationsMenu li { background: LightGrey; 
+      padding: 5px;
+      border: 2px solid black;;
+      
+    }
+    #notificationsMenu li:nth-child(odd) { background: grey;}
+    
+    .navBarItemContent {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .navBarTitle {
+      padding-left: 20px;
+      border-left: 3px solid black;
+      display: inline-block;
+      font-weight: bold;
+      height: 100%;
+    }
+    
+    .container {
+      background-color: white;
+      color: black;
+      padding: 18px;
+      border-left: 2px solid grey;
+      border-right: 2px solid grey;
+      border-bottom: 2px solid grey;
+      border-top: 2px solid black;
+    }
+    
+    .sidebar {
+      display: inline-block;
+      padding-right: 18px;
+      width: 25%;
+      border-right: 2px solid grey;
+    }
+    
+    .content {
+      padding-left: 18px;
+      display: inline-block;
+      width: 75%;
+      float: right;
+    }
+    
+    .container h {
+      display: block;
+      font-size: 200%;
+      margin-bottom: 10px;
+    }
+    
+    .footer {
+      padding: 18px ;
+      background-color: LightGrey;
+      color: grey;
+      border-left: 2px solid grey;
+      border-right: 2px solid grey;
+      border-bottom: 2px solid grey;
+    }
+    
+    </style>
+  </head>
+  <body>
+    
+    
+    <div class="nav">
+      <div class="navBarTitle">
+        <div class="navBarItemContent">
+          App Academy Students     
+        </div>
+      </div> 
+      <div class="navBarOptions">
+        <div class="navBarItem">
+          <div class="navBarItemContent">
+            Home
+          </div>
+        </div>
+        <div class="navBarItem" id="notifications">
+          <div class="navBarItemContent">
+            Notifications
+
+            <ul id="notificationsMenu">
+              
+                <li>Someone liked your picture.</li>
+
+                <li>You have a new friend request.</li>
+
+                <li>Welcome to App Academy.</li>
+            </ul>
+        </div>          
+        </div><div class="navBarItem">
+          <div class="navBarItemContent">
+            Messages
+          </div>
+        </div><div class="navBarItem">
+          <div class="navBarItemContent">
+            Settings
+          </div>
+        </div>
+      </div>  <!-- navbar -->
+
+      
+      <div class="container">
+        <div class="sidebar">
+          <h>Sidebar</h>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="content">
+          <h>Content</h>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+      </div>
+        <div class="footer">
+          akdjsaldalskj
+        </div>
+      
+    </div>
+  </body>
+</html>
+
